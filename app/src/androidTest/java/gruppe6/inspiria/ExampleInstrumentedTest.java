@@ -24,3 +24,4 @@ public class ExampleInstrumentedTest {
         assertEquals("gruppe6.inspiria", appContext.getPackageName());
     }
 }
+
