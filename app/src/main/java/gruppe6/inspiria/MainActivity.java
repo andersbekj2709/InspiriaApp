@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToQuiz (View view){
 
-        Intent QuizActivity = new Intent(this, MainActivity.class);
-        startActivity(QuizActivity);
+        Intent MainActivity = new Intent(this, QuizActivity.class);
+        startActivity(MainActivity);
      }
 }
 //test
