@@ -3,7 +3,7 @@
     <string name="title_activity_quiz2">QuizActivity2</string>
 
     <string-array name="names">
-        <item>Hjem</item>
+        <item>Meny:</item>
         <item>Quiz</item>
         <item>Dagens info</item>
         <item>Oppgaver</item>
