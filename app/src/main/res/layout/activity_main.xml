@@ -19,7 +19,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/imageView"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+       />
 
     <ImageView
         android:id="@+id/imageView"
@@ -60,7 +61,8 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="59dp"
-        android:layout_marginRight="59dp" />
+        android:layout_marginRight="59dp"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
