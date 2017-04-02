@@ -4,8 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import static gruppe6.inspiria.R.id.action0;
+import static gruppe6.inspiria.R.id.parent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,12 +25,53 @@ public class MainActivity extends AppCompatActivity {
         minAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(minAdapter);
 
+        mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+
+        @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id){
+
+
+            switch (position){
+
+                case 0 :
+                    break;
+                case 1 :
+                    goToQuiz();
+                case 2 :
+                    break;
+                case 3 :
+                    goToOppgave();
+
+                default:
+                    break;
+
+
+            }
+
+        }
+        @Override
+            public void onNothingSelected(AdapterView<?> parent){
+
+        }
+
+
+        });
+
+
     }
 
-    public void goToQuiz (View view){
+
+
+    public void goToQuiz(){
 
         Intent MainActivity = new Intent(this, QuizActivity.class);
         startActivity(MainActivity);
      }
+
+    public void goToOppgave(){
+
+        Intent MainActivity = new Intent(this, OppgaveActivity.class);
+        startActivity(MainActivity);
+    }
 }
 //test

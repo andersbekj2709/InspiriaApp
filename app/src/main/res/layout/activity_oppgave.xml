@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="gruppe6.inspiria.QuizActivity">
+    tools:context="gruppe6.inspiria.OppgaveActivity">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quiz siden"
+        android:id="@+id/textView2"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:text="Oppgave siden"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="35dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
+        android:layout_marginLeft="35dp" />
 </android.support.constraint.ConstraintLayout>
