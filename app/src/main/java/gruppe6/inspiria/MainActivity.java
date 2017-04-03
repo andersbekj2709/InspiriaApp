@@ -8,8 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import static gruppe6.inspiria.R.id.action0;
-import static gruppe6.inspiria.R.id.parent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,4 +72,3 @@ public class MainActivity extends AppCompatActivity {
         startActivity(MainActivity);
     }
 }
-//test
