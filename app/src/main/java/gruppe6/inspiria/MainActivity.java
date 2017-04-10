@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+       /* Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
 
         ArrayAdapter<String> minAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
 
@@ -55,20 +52,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-
+    */
     }
 
 
+         public void goToMeny (View view) {
 
-    public void goToQuiz(){
+            Intent MainActivity = new Intent(this, AppmenyActivity.class);
+            startActivity(MainActivity);
+        }
 
-        Intent MainActivity = new Intent(this, QuizActivity.class);
-        startActivity(MainActivity);
-     }
 
-    public void goToOppgave(){
-
-        Intent MainActivity = new Intent(this, OppgaveActivity.class);
-        startActivity(MainActivity);
-    }
 }
